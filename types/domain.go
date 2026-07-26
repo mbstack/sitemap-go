@@ -29,7 +29,10 @@ func URLToPathSlug(raw string) string {
 	return strings.Trim(raw, "/")
 }
 
-func SafeUrlParser(url string) (string, error) {
+// SafeURLParser returns "https://" + the host of url, or an
+// error if url has no host. Used by callers that need a
+// stable scheme://host form before scanning.
+func SafeURLParser(url string) (string, error) {
 	domain := DomainFrom(url)
 	if domain == "" {
 		return "", errors.New("something went wrong")

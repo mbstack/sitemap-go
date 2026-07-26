@@ -31,4 +31,10 @@ go.work.sum
 # .idea/
 # .vscode/
 
-/examples/data
+# Local data directory the CLI and library create at runtime.
+/data
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+/cmd/example

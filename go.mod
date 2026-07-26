@@ -1,10 +1,11 @@
-module github.com/MegaBytee/sitemap-go
+module github.com/mbstack/sitemap-go
 
-go 1.24.4
+go 1.25.0
 
 require (
 	github.com/gocolly/colly/v2 v2.2.0
-	github.com/velebak/colly-sqlite3-storage v0.0.0-20240410181914-45e8d740b550
+	github.com/rs/zerolog v1.35.1
+	golang.org/x/sync v0.22.0
 	gorm.io/driver/sqlite v1.6.0
 	gorm.io/gorm v1.31.0
 )
@@ -22,11 +23,14 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/kennygrant/sanitize v1.2.4 // indirect
+	github.com/mattn/go-colorable v0.1.14 // indirect
+	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-sqlite3 v1.14.22 // indirect
 	github.com/nlnwa/whatwg-url v0.6.1 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/temoto/robotstxt v1.1.2 // indirect
 	golang.org/x/net v0.37.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
 	golang.org/x/text v0.23.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
